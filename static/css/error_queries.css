@@ -35,6 +35,18 @@
     background-color: #37474f;
   }
 
+  .error__btn--500 {
+    color: #fff;
+    border: 0;
+    background-color: #ffc100;
+  }
+
+  .error__btn--503 {
+    color: #fff;
+    border: 0;
+    background-color: #263238;
+  }
+
   .error__title {
     top: 2rem;
     left: 2rem;
@@ -42,14 +54,29 @@
     word-spacing: 1;
   }
 
+  .error__title--404 {
+    left: 1rem;
+  }
+
   .error__heading,
-  .error__heading--403 {
+  .error__heading--403,
+  .error__heading--404,
+  .error__heading--500,
+  .error__heading--503 {
     top: 71.5vh;
     left: 2rem;
   }
 
-  .error__heading--403 {
+  .error__heading--403,
+  .error__heading--404,
+  .error__heading--500,
+  .error__heading--503 {
     text-align: center;
+    margin: 0 auto;
+  }
+  
+  .error__heading--503 {
+      width: 95%;
   }
 
   .error__heading--primary {
@@ -58,7 +85,10 @@
     display: inline-block;
     font-weight: 700;
   }
-  .error__heading--primary-403 {
+  .error__heading--primary-403,
+  .error__heading--primary-404,
+  .error__heading--primary-500,
+  .error__heading--primary-503 {
     width: 100%;
     margin: 0 auto;
   }
@@ -68,7 +98,10 @@
     font-size: 1.6rem;
   }
 
-  .error__heading--secondary-403 {
+  .error__heading--secondary-403,
+  .error__heading--secondary-404,
+  .error__heading--secondary-500,
+  .error__heading--secondary-503 {
     width: 100%;
     margin: 0 auto;
   }
@@ -78,12 +111,18 @@
     left: 2rem;
   }
 
-  .error__what-to--do.error__what-to--do--403 {
-      top: 80vh;
-      left: 2%;
-      width: 95%;
-      padding: .2rem;
+  .error__what-to--do.error__what-to--do--403,
+  .error__what-to--do.error__what-to--do--404,
+  .error__what-to--do.error__what-to--do--503,
+  .error__what-to--do.error__what-to--do--500 {
+    top: 80vh;
+    left: 2%;
+    width: 95%;
+    padding: 0.2rem;
   }
+
+  .error__what-to--do.error__what-to--do--500 {top: 83vh;}
+  .error__what-to--do.error__what-to--do--503 {top: 83vh;}
 
   .error__what-to--do ul li {
     width: 70%;
@@ -92,7 +131,15 @@
     list-style-type: circle;
   }
 
-  .error__what-to--do--403 ul li {width: 100%;}
+  .error__what-to--do--403 ul li,
+  .error__what-to--do--404 ul li,
+  .error__what-to--do--500 ul li,
+  .error__what-to--do--503 ul li {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
   .error__what-to--do ul li::before {
     content: ".";
   }
